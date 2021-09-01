@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Tilda поиск по папкам и страницам",
+  "version": "0.0.5",
+  "description": "Поиск по папкам и страницам для Tilda Publishing",
+  "author": "Лиринг Эдуард",
+  "browser_action": {
+    "default_title" : "Tilda поиск",
+    "default_icon" : "image/icon.png"
+  },
+  "icons" : {
+    "16" : "image/icon16.png",
+    "48" : "image/icon48.png",
+    "128" : "image/icon128.png"
+  },
+  "background" : {
+  },
+  "content_scripts" : [
+    {
+      "matches": ["https://tilda.cc/projects/?*"],
+      "js": ["jquery-3.5.1.min.js","content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources":[
+    
+  ],
+  "permissions": [
+    "https://tilda.cc/"
+  ]
+}
