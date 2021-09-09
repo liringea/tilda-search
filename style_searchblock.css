@@ -1,0 +1,24 @@
+.tp-library__header {
+  position: relative;
+}
+
+.autosearch {
+  position: absolute;
+  top: 48px;
+  left: 211px;
+  background-color: lightgray;
+  padding: 0 5px 2px 5px;
+  color: white;
+  font-weight: 500;
+  border-radius: 9px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.autosearch.on {
+  background-color: gray;
+}
+
+.tp-library_rightsideopened .autosearch {
+  left: 132px;
+}
