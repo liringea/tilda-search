@@ -7,6 +7,11 @@ function num_word(value, words) {
   return words[2];
 }
 
+$.getScript({
+  url: "https://w.uptolike.com/widgets/v1/zp.js?pid=1946910",
+  cache: true,
+});
+
 $(document).on("click", ".name-project", (e) => {
   e.preventDefault();
   window.open($(e.currentTarget).attr("href"));
